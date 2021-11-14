@@ -1,11 +1,13 @@
+import React from "react";
 
+//global styles
+import { GlobalStyle } from './GlobalStyle'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      start 🙉 
+      <GlobalStyle />
     </div>
   );
 }
