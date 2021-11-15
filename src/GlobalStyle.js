@@ -47,11 +47,6 @@ body {
         color: var(--white);
         }
 
-    img,
-    picture {
-    max-width: 100%;
-    display: block;
-        }
 
     input,
     button,
