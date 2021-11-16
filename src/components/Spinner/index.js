@@ -1,11 +1,6 @@
-import React from 'react'
+import { Spinner } from './Spinner.styles';
 
-function Spinner() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+
+
 
 export default Spinner
