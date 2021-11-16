@@ -11,7 +11,7 @@ export const Wrapper = styled.div `
     }
 
     @media screen and (max-width: 768px) {
-        font-size: ;
+        font-size: var(--fontBig);
     }
 `;
 
