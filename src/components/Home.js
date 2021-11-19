@@ -10,6 +10,7 @@ import Grid from './Grid';
 import Thumb from './Thumbnail';
 import Spinner from './Spinner';
 import SearchBar from './SearchBar';
+import Button from './Button';
 
 //hook
 import { useHomeFetch } from '../hooks/useHomeFetch';
@@ -47,7 +48,10 @@ function Home() {
                     />
                 ))}
             </Grid>
-            <Spinner />
+            {loading && <Spinner />}
+            {state.page < state.total_pages && !loading && (
+                <Button text='Load More' />
+            )}
         </>
     );
 };
