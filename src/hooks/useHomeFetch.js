@@ -37,14 +37,14 @@ export const useHomeFetch = () => {
         setLoading(false);
     };
 
-    //intial render
+    //intial render and search
     useEffect(() => {
+        setState(initialState);
+        fetchMovies(1, searchTerm);
 
-        fetchMovies(1)
+    }, [searchTerm]);
 
-    }, []);
-
-    return { state, loading, error, setSearchTerm };
+    return { state, loading, error, searchTerm, setSearchTerm };
 
 
 
