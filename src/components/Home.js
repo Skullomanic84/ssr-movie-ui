@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 
 //config
@@ -7,7 +7,7 @@ import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL }from '../config';
 //components
 import HeroImage from './HeroImage';
 import Grid from './Grid';
-import Thumb from './Thumbnail';
+import Thumbnail from './Thumbnail';
 import Spinner from './Spinner';
 import SearchBar from './SearchBar';
 import Button from './Button';
@@ -39,7 +39,7 @@ function Home() {
 
             <Grid header= {searchTerm ? 'Search Results' : 'Popular Movies'}>
                 {state.results.map(movie => (
-                    <Thumb 
+                    <Thumbnail 
                     key={movie.id}
                     clickable
                     image={
